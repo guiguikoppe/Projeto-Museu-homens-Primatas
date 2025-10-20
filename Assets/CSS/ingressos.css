@@ -1,0 +1,235 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #a9c9a4; /* Mantendo o verde */
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+
+
+
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* ===== CARD BASE ===== */
+.card {
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.card img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+  background-color: #000;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== CARD BODY ===== */
+.card-body {
+  flex-grow: 1;
+  padding: 25px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.price {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.price:hover {
+  background-color: #2e6f40;
+  transform: scale(1.05);
+}
+
+.card-body h2 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 15px 0;
+  opacity: 0.9;
+}
+
+/* ===== BENEFÍCIOS ===== */
+.card-body h3 {
+  margin-top: 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.card-body ul {
+  list-style: none;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding-left: 0;
+}
+
+.card-body ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+}
+
+.card-body ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2e6f40;
+  font-weight: 700;
+}
+
+/* ===== CORES ESPECÍFICAS ===== */
+.bronze .card-body {
+  background-color: #d2a46b;
+}
+
+.prata .card-body {
+  background-color: #e5e5e5;
+}
+
+.diamante .card-body {
+  background-color: #9db4f2;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .cards {
+    gap: 30px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .card img {
+    height: 280px;
+  }
+}
+
+/* ----- Celulares grandes (até 805px) ----- */
+@media (max-width: 805px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    padding: 8px 20px;
+  }
+}
+
+/* ----- Celulares pequenos (até 480px) ----- */
+@media (max-width: 480px) {
+  .container {
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .card-body h2 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 0.85rem;
+  }
+
+  .price {
+    font-size: 1rem;
+    padding: 6px 18px;
+  }
+}
+/* ===== FOOTER ===== */
+
+
+/* ===== FOOTER RESPONSIVO ===== */
+@media (max-width: 700px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+    

@@ -1,0 +1,64 @@
+
+.hero {
+    text-align: center;
+
+}
+
+.hero img {
+    max-width: 800px;
+    border-radius: 15px;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.hero h2 {
+    margin-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--verde-medio);
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+.login-convite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+}
+
+.login-convite img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.login-box {
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 15px;
+    width: 45%;
+    border: 4px solid var(--verde-medio);
+}
+
+.login-box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sobre {
+    background-color: var(--branco);
+    border-radius: 15px;
+    margin: 60px 8%;
+    padding: 40px;
+     border: 4px solid var(--verde-medio);
+}
+
+.sobre h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+/*  Paleta de Cores */
+:root {
+    --verde-claro: #b7d1af;
+    --verde-medio: #97b08d;
+    --verde-escuro: #4b6043;
+    --branco: #f6f6f6;
+    --preto: #1b1b1b;
+}
+
+
+
+/*  Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--verde-claro);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+/*  Títulos e textos */
+h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*  Cabeçalho */
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2e6f40;
+  transform: scale(1.05);
+}
+
+header {
+    background-color: var(--verde-medio);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    min-width: 400px;
+}
+
+header .logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    flex-direction: row;
+    
+}
+
+header nav a:hover {
+    color: var(--verde-escuro);
+}
+
+/*  Seções gerais */
+section {
+    padding: 40px 8%;
+}
+
+/*  Botões */
+button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-preto {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 10px 25px;
+}
+
+.btn-preto:hover {
+    background-color: #333;
+}
+footer{
+min-width: 400px;
+}
+.site-footer {
+  background: linear-gradient(180deg, #2b5234 0%, #1c3822 100%);
+  color: #fff;
+  margin-top: 60px;
+  box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.25);
+  border-top: 2px solid #000;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding: 40px 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-brand h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 350px;
+  line-height: 1.5;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 10px;
+}
+
+.footer-nav{
+  justify-content: space-between;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #a9c9a4;
+}
+
+.footer-contact p {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*  Responsividade */
+@media (max-width: 885px) {
+    
+
+    header nav a {
+        margin: 0 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        padding: 30px 5%;
+    }
+}
+ 
+@media (max-width: 540px) {
+    
+     header .logo {
+        font-size: 20px;
+        flex-direction: row;
+        
+    }
+    header  a {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    }
+}
